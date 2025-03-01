@@ -1,10 +1,10 @@
-class Pasien {
+public class pasien {
     int id;
     String nama;
     int umur;
     String alamat;
     
-    public Pasien(int id, String nama, int umur, String alamat) {
+    public pasien(int id, String nama, int umur, String alamat) {
         this.id = id;
         this.nama = nama;
         this.umur = umur;

@@ -1,36 +1,38 @@
-import java.util.*;
-class SIMRS {
-    List<Pasien> pasienList = new ArrayList<>();
-    List<Dokter> dokterList = new ArrayList<>();
-    List<Pembayaran> pembayaranList = new ArrayList<>();
-    Farmasi farmasi = new Farmasi();
-    
-    public void tambahPasien(Pasien pasien) {
+import java.util.ArrayList;
+import java.util.List;
+
+public class simrs {
+    List<pasien> pasienList = new ArrayList<>();
+    List<dokter> dokterList = new ArrayList<>();
+    List<pembayaran> pembayaranList = new ArrayList<>();
+    farmasi farmasi = new farmasi();
+
+    public void tambahpasien(pasien pasien) {
         pasienList.add(pasien);
     }
-    
-    public void tambahDokter(Dokter dokter) {
+
+    public void tambahdokter(dokter dokter) {
         dokterList.add(dokter);
     }
-    
-    public void tambahPembayaran(Pembayaran pembayaran) {
+
+    public void tambahpembayaran(pembayaran pembayaran) {
         pembayaranList.add(pembayaran);
     }
-    
-    public void tampilkanSemuaPasien() {
-        for (Pasien p : pasienList) {
+
+    public void tampilkanSemuapasien() {
+        for (pasien p : pasienList) {
             System.out.println(p);
         }
     }
-    
-    public void tampilkanSemuaDokter() {
-        for (Dokter d : dokterList) {
+
+    public void tampilkanSemuadokter() {
+        for (dokter d : dokterList) {
             System.out.println(d);
         }
     }
-    
-    public void tampilkanSemuaPembayaran() {
-        for (Pembayaran p : pembayaranList) {
+
+    public void tampilkanSemuapembayaran() {
+        for (pembayaran p : pembayaranList) {
             System.out.println(p);
         }
     }
